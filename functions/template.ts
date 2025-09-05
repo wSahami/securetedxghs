@@ -30,6 +30,10 @@ export function getTemplate({
           margin: 0 auto;
         }
 
+        body {
+          background-color: black;
+        }
+
         .error {
           background: #eb0028;
           border-radius: 2px;
@@ -37,7 +41,10 @@ export function getTemplate({
           padding: 0.5em 1em;
         }
 
-        h2 { color: white; }
+        h2 { 
+          color: white;
+          text-size: 24pt
+        }
         h3 { color: white; }
         article {
           color: white;
