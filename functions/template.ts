@@ -30,7 +30,7 @@ export function getTemplate({
         }
 
         .error {
-          background: white;
+          background: #eb0028;
           border-radius: 10px;
           color: var(--del-color);
           padding: 0.5em 1em;
