@@ -20,6 +20,7 @@ export function getTemplate({
 
       <style>
         body > main {
+          background-color: black;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -31,12 +32,17 @@ export function getTemplate({
 
         .error {
           background: #eb0028;
-          border-radius: 10px;
-          color: var(--del-color);
+          border-radius: 2px;
+          color: white;
           padding: 0.5em 1em;
         }
 
-        h2 { color: var(--color-h2); }
+        h2 { color: white; }
+        h3 { color: white; }
+        article {
+          color: white;
+          background-color: #2D2D2D;
+        }
       </style>
     </head>
 
@@ -44,8 +50,8 @@ export function getTemplate({
       <main>
         <article>
           <hgroup>
-            <h1>Password</h1>
-            <h2>Please enter your password for this site.</h2>
+            <h2>Password</h2>
+            <h3>Please enter your password for this site.</h3>
           </hgroup>
           ${withError ? `<p class="error">Incorrect password, please try again.</p>` : ''}
           <form method="post" action="/cfp_login">
